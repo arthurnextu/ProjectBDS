@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    background-color: aqua;
+    position: sticky;
+    height: 100px;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+.menu {
+    font-size: 25px;
+    justify-content: center;
+}
+
+.menu > ul {
+    display: flex
+;
+    list-style: none;
+}
+
+.navbar {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.sous-nav {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: aquamarine;
+    width: fit-content;
+}
+
+.content {
+    height: 500vh;
+    background: bisque;
+}
+
