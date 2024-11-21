@@ -1,14 +1,14 @@
-
+import styles from './Header.module.css'
 
 export function Header() {
     return (
-        <div className="header">
+        <div className={styles["header"]}>
             <img id="logo" src="logo.png" alt="logo next-gen sports"></img>
-            <div className="menu">
+            <div className={styles["menu"]}>
                 <ul>
-                    <li className="navbar">
+                    <li className={styles["navbar"]}>
                         <a href="/"> Sports </a>
-                        <ul className="sous-nav">
+                        <ul className={styles["sous-nav"]}>
                             <li>
                                 <a href="/"> Running </a>
                             </li>
@@ -20,18 +20,18 @@ export function Header() {
                             </li>
                         </ul>
                     </li>
-                    <li className="navbar">
+                    <li className={styles["navbar"]}>
                         <a href="/"> Activités </a>
-                        <ul className="sous-nav">
+                        <ul className={styles["sous-nav"]}>
                             <li>
                                 <a href="/"> </a>
                             </li>
                         </ul>
                     </li>
 
-                    <li className="navbar">
+                    <li className={styles["navbar"]}>
                         <a href="/"> À propos </a>
-                        <ul className="sous-nav">
+                        <ul className={styles["sous-nav"]}>
                             <li>
                                 <a href="/"> </a>
                             </li>
