@@ -3,7 +3,7 @@ import styles from './Activity.module.css';
 
 export function ActivityPage() {
     return (
-        <div className={styles.activityPage}>
+        <div className={styles.ActivityPage}>
             <main className={styles.mainContent}>
                 <h1>Activités</h1>
                 <div className={styles.card}>

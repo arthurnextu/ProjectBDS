@@ -3,18 +3,14 @@ import styles from './About.module.css';
 
 export function AboutPage() {
     return (
-        <div className={styles.aboutPage}>
+        <div className={styles.AboutPage}>
             <main className={styles.mainContent}>
                     <h1>À Propos de Nous</h1>
-                    <div className={styles.card}>
-                        <section className={styles.section}>
-                            <p>
-                            Next-Gen Sports est une organisation dédiée à la promotion du sport
-                            et du bien-être. Nous croyons en l'importance de la communauté,
-                            de la performance et de la santé globale.
-                            </p>
-                        </section>
-                    </div>
+                    <p>
+                     Next-Gen Sports est une organisation dédiée à la promotion du sport
+                     et du bien-être. Nous croyons en l'importance de la communauté,
+                     de la performance et de la santé globale.
+                     </p>
                     
                 <div className={styles.card}>
                 <section className={styles.section}>
