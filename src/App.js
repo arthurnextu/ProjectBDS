@@ -1,17 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import { Header } from './Conponents/Header';
-import { Footer } from './Conponents/Footer';
-import { Body } from './Conponents/Body';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header } from './Conponents/Header/Header';
+import { RunningPage } from './Conponents/RunningPage/RunningPage';
+import { CrossFitPage } from './Conponents/CrossFit/CrossFit';
+import { RenfoMusculairePage } from './Conponents/RenfoMusculaire/RenfoMusculaire';
+import { HomePage } from './Conponents/HomePage/HomePage';
+import { AboutPage } from './Conponents/About/About'
+import { ActivityPage } from './Conponents/Activite/Activity';
 
 function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Body></Body>
-      <Footer></Footer>
-    </div>
-  );
-}
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<HomePage/>} />
+                <Route path="/running" element={<RunningPage />} />
+                <Route path="/crossfit" element={<CrossFitPage/>} />
+                <Route path="/renfomusculaire" element={<RenfoMusculairePage/>} />  
+                <Route path="/activity" element={<ActivityPage/>} />
+                <Route path="/about" element={<AboutPage/>} />
+            </Routes>
+        </Router>
+    );
 
 export default App;
+
